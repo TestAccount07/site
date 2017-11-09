@@ -1,0 +1,88 @@
+body {
+	background-color: black;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	text-align: center;
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+
+.head {
+	font-size: 30px;
+}
+
+.body {
+	font-size: 14px;
+	text-align: left;
+	padding: 10px;	
+}
+
+
+a:link {
+	color: white;
+    text-decoration: none;
+}
+
+a:visited {
+	color: white;
+    text-decoration: none;
+}
+
+a:hover {
+	color: white;
+    text-decoration: underline;
+}
+
+a:active {
+	color: white;
+    text-decoration: underline;
+}
+
+.img {
+	padding: 10px;
+}
+
+.post {
+	background-color: #111;
+	border: 1px 90% #333;
+	border-radius: 2px;
+	animation: colorchange 30s infinite;
+	-webkit-animation: colorchange 30s infinite;
+}
+
+.pic {
+	background-color: #222;
+	border: 1px solid #333;
+	border-radius: 2px;
+}
+
+.btn {
+	background-color: #555; 
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    font-size: 16px;
+}
+
+@keyframes colorchange
+{
+    0%   {background: red;}
+    33%  {background: blue;}
+    66%  {background: green;}
+    100% {background: red;}
+}
+	
+@-webkit-keyframes colorchange 
+{
+    0%   {background: red;}
+    33%  {background: blue;}
+    66%  {background: green;}
+    100% {background: red;}
+}
+	
+	
+	
+	

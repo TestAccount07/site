@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>The Great Time Waster</title>
+	<link rel="stylesheet" href="index.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+	<script>
+	
+	var val = 0;
+	function Number() {
+    
+		var value = parseInt(document.getElementById('number').value, 10);
+		value = isNaN(value) ? 0 : value;
+		value++;
+		document.getElementById('number').value = value;
+		
+		if (value == 5) {
+			showMono(1);
+		}
+		
+		if (value == 100) {
+			showMono(2);
+		}
+		
+		if (value == 250) {
+			showMono(3);
+		}
+		
+		if (value == 500) {
+			showMono(4);
+		}
+		
+		if (value == 750) {
+			showMono(5);
+		}
+		
+		if (value == 1000) {
+			showMono(6);
+		}
+		
+		if (value == 1001) {
+			showMono(7);
+		}
+	}
+	
+	function showMono(monoNum) {
+		var y = "mono" + monoNum;
+		
+		var id = document.getElementById(y);
+        id.style.display = 'block';
+	
+    }
+
+	
+	</script>
+	
+</head>
+
+<body>
+	<div class="pic">
+	
+		<h1 class="head">Welcome To Alot Of Fun</h1>
+		<p id="mono0" class="body"> Why did you have to come here? -_-<br> Oh well click this button if you want... Not that it does anything any way, I think</p>
+		<p id="mono1" class="body" style="display: none;"> Still Clicking the Button are You? You know you can leave...Right?</p>
+		<p id="mono2" class="body" style="display: none;"> Acheivement Unlocked: Distrction <img src="img/ocean.gif"></p>
+		<p id="mono3" class="body" style="display: none;"> Acheivement Unlocked: Seriously Bored</p>
+		<p id="mono4" class="body" style="display: none;"> Seriously Get A Life, Go outside...</p>
+		<p id="mono5" class="body" style="display: none;"> Well I guess I can't make you stop</p>
+		<p id="mono6" class="body" style="display: none;"> Here, you WON now LEAVE</p>
+		<p id="mono7" class="body" style="display: none;"> Won't Leave Without a Prize? Here<a href="http://ianharmon.com/share/graphics/migraine/"> Prize</a></p>
+		<br><button onclick="Number()" class="btn">Click me</button>
+		<input type="text" id="number" value="0" disabled="disabled" />
+	
+	</div>
+	
+
+	
+	<div class="post">
+
+	</div>
+	
+</body>
+
+
+</html>
